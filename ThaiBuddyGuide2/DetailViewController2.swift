@@ -1,0 +1,114 @@
+//
+//  DetailViewController.swift
+//  ThaiBuddyGuide2
+//
+//  Created by Thai Buddy on 11/18/14.
+//  Copyright (c) 2014 Thai Buddy Guides. All rights reserved.
+//
+
+import UIKit
+
+class DetailViewController2: UIViewController {
+
+    @IBOutlet weak var myDetailedImageView: UIImageView!
+   
+    
+    @IBOutlet weak var itemLabel: UILabel!
+    
+    //new IBOutlets
+    @IBOutlet weak var nameInThaiLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    
+    //scrollview
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var itemString: String?
+    var myDetailedImageName: String?
+    var desciptionDetail : String?
+    
+    var phoneString: String?
+    var nameInThaiString: String?
+    
+    var urlGetThereVidString: String?
+    var urlAtLocationVidString: String?
+    
+    var latCord: Float?
+    var longCord: Float?
+    
+    @IBOutlet weak var desciptionLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    self.itemLabel.text = itemString
+       self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
+        self.desciptionLabel.text = desciptionDetail
+        
+        //new labels text assign here
+        self.phoneLabel.text = phoneString
+        self.nameInThaiLabel.text = nameInThaiString
+        
+        // Do any additional setup after loading the view.
+        
+        //scroll
+         scrollView.contentSize = CGSize(width: CGRectGetWidth(view.bounds), height: CGRectGetHeight(view.bounds) * 1.5)
+        scrollView.bounces = false
+        
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+    {
+         println("got here"+itemString!)
+        self.dismissViewControllerAnimated(true,completion: nil)
+    }
+
+    @IBAction func goTherebutton(sender: AnyObject) {
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //var nextVC: MapViewController = segue.destinationViewController as MapViewController
+        
+        // nextVC.itemNamefromDetail = itemString!
+        
+        if (segue.identifier == "goToSque"){
+            var nextVC: MapViewController = segue.destinationViewController as MapViewController
+            
+            nextVC.itemNamefromDetail = itemString!
+        }
+        
+        if (segue.identifier == "MorePhotoSeque"){
+            var morePhotosObject: MorePhotosViewController = segue.destinationViewController as MorePhotosViewController
+            
+            morePhotosObject.namePassedfromDetailView = itemString!
+            
+        }
+       //add new seque to webvideos VC
+        if (segue.identifier == " SeeVideoSeque"){
+            var WebVidepViewVCObject: WebVideoViewController = segue.destinationViewController as WebVideoViewController
+            
+          // WebVidepViewVCObject.namePassedfromDetailView = itemString!
+            
+           
+            
+            
+        }
+        
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

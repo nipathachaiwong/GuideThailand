@@ -1,0 +1,30 @@
+[
+    {
+        "name": "_design/admin",
+        "nameInThai": "_design/admin",
+        "hours": "_design/admin",
+        "phone": "_design/admin",
+        "imageName": "wat.jpeg",
+        "category": "fun",
+        "lat":13.7334218,
+        "long":100.6922059,
+        "urlGetThereVid": "_design/admin",
+        "urlAtLocationVid": "_design/admin",
+        "moreImages":["True.jpeg", "False"],
+        "descriptionstring": " 2dsad asd dasad asd das daad asd das daad asd das daad asd das daad asd das da das sa d sad a590a68c"
+    },
+    {
+        "name": "_design/admin",
+        "nameInThai": "_design/admin",
+        "hours": "_design/admin",
+        "phone": "_design/admin",
+        "imageName": "wat.jpeg",
+        "category": "for kids",
+        "lat":13.7334218,
+        "long":100.6922059,
+        "urlGetThereVid": "_design/admin",
+        "urlAtLocationVid": "_design/admin",
+        "moreImages":["True.jpeg", "False"],
+        "descriptionstring": " 2dsad ad asd das daad asd das daad asd das daad asd das daad asd das daasd das das sa d sad a590a68c"
+    }
+]
