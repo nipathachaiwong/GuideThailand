@@ -222,7 +222,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="morePhotoButton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="K5s-TN-vaV"/>
                                     <segue destination="6z0-hP-bZo" kind="modal" identifier="MorePhotoSeque" id="jWt-hh-jH0"/>
                                 </connections>
                             </button>
