@@ -92,7 +92,7 @@ class DetailViewController2: UIViewController {
         if (segue.identifier == "MorePhotoSeque"){
             var morePhotosObject: MorePhotosViewController = segue.destinationViewController as MorePhotosViewController
             
-            //morePhotosObject.namePassedfromDetailView = itemString!
+            morePhotosObject.nameStringForImages = itemString!
             
         }
        //add new seque to webvideos VC

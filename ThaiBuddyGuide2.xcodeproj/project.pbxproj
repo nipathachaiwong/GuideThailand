@@ -27,6 +27,12 @@
 		B4BC1DA91A28EEA9008F0A7F /* ItemsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */; };
 		B4BC1DAF1A290D0F008F0A7F /* 2nd location.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */; };
 		B4BC1DB01A290D0F008F0A7F /* first Place.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DAE1A290D0F008F0A7F /* first Place.mp3 */; };
+		B4BC1DB61A291246008F0A7F /* first Place6@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB11A291246008F0A7F /* first Place6@2x.jpg */; };
+		B4BC1DB71A291246008F0A7F /* first Place5@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB21A291246008F0A7F /* first Place5@2x.jpg */; };
+		B4BC1DB81A291246008F0A7F /* first Place4@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB31A291246008F0A7F /* first Place4@2x.jpg */; };
+		B4BC1DB91A291246008F0A7F /* first Place3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DB41A291246008F0A7F /* first Place3@2x.jpg */; };
+		B4BC1DBE1A291340008F0A7F /* first Place2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DBC1A291340008F0A7F /* first Place2@2x.jpg */; };
+		B4BC1DBF1A291340008F0A7F /* first Place1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4BC1DBD1A291340008F0A7F /* first Place1@2x.jpg */; };
 		B4C3A0DB1A2297B700A96225 /* MorePhotosViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3A0DA1A2297B700A96225 /* MorePhotosViewController .swift */; };
 		B4C3A0E31A22990F00A96225 /* bild-01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0DD1A22990F00A96225 /* bild-01@2x.jpg */; };
 		B4C3A0E41A22990F00A96225 /* bild-02@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0DE1A22990F00A96225 /* bild-02@2x.jpg */; };
@@ -86,6 +92,12 @@
 		B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController2.swift; sourceTree = "<group>"; };
 		B4BC1DAD1A290D0F008F0A7F /* 2nd location.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "2nd location.mp3"; sourceTree = "<group>"; };
 		B4BC1DAE1A290D0F008F0A7F /* first Place.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "first Place.mp3"; sourceTree = "<group>"; };
+		B4BC1DB11A291246008F0A7F /* first Place6@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place6@2x.jpg"; sourceTree = "<group>"; };
+		B4BC1DB21A291246008F0A7F /* first Place5@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place5@2x.jpg"; sourceTree = "<group>"; };
+		B4BC1DB31A291246008F0A7F /* first Place4@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place4@2x.jpg"; sourceTree = "<group>"; };
+		B4BC1DB41A291246008F0A7F /* first Place3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place3@2x.jpg"; sourceTree = "<group>"; };
+		B4BC1DBC1A291340008F0A7F /* first Place2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place2@2x.jpg"; sourceTree = "<group>"; };
+		B4BC1DBD1A291340008F0A7F /* first Place1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first Place1@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0DA1A2297B700A96225 /* MorePhotosViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MorePhotosViewController .swift"; sourceTree = "<group>"; };
 		B4C3A0DD1A22990F00A96225 /* bild-01@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-01@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0DE1A22990F00A96225 /* bild-02@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-02@2x.jpg"; sourceTree = "<group>"; };
@@ -176,6 +188,12 @@
 				B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */,
 				B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */,
 				B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */,
+				B4BC1DB11A291246008F0A7F /* first Place6@2x.jpg */,
+				B4BC1DB21A291246008F0A7F /* first Place5@2x.jpg */,
+				B4BC1DB31A291246008F0A7F /* first Place4@2x.jpg */,
+				B4BC1DBC1A291340008F0A7F /* first Place2@2x.jpg */,
+				B4BC1DBD1A291340008F0A7F /* first Place1@2x.jpg */,
+				B4BC1DB41A291246008F0A7F /* first Place3@2x.jpg */,
 				B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */,
 				B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */,
 				B446AE031A1A8B2E007F3CD7 /* Info.plist */,
@@ -367,23 +385,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BC1DBE1A291340008F0A7F /* first Place2@2x.jpg in Resources */,
 				B4C3A0E61A22990F00A96225 /* bild-04@2x.jpg in Resources */,
+				B4BC1DBF1A291340008F0A7F /* first Place1@2x.jpg in Resources */,
 				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
 				B4D2CDFC1A1FFF5E00B02E7E /* f3@2x.jpg in Resources */,
 				B4B5D3811A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 in Resources */,
 				B4C3A0E71A22990F00A96225 /* bild-05@2x.jpg in Resources */,
 				B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */,
+				B4BC1DB81A291246008F0A7F /* first Place4@2x.jpg in Resources */,
 				B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */,
 				B4BC1DAF1A290D0F008F0A7F /* 2nd location.mp3 in Resources */,
 				B47AFCCD1A27368A00516A97 /* thaiguide_todolist.txt in Resources */,
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
+				B4BC1DB71A291246008F0A7F /* first Place5@2x.jpg in Resources */,
 				B4BC1DB01A290D0F008F0A7F /* first Place.mp3 in Resources */,
 				B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */,
+				B4BC1DB61A291246008F0A7F /* first Place6@2x.jpg in Resources */,
 				B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */,
 				B4BC1DA51A28CABD008F0A7F /* Item2Data.json in Resources */,
 				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
 				B4C3A0E31A22990F00A96225 /* bild-01@2x.jpg in Resources */,
 				B4C3A0E41A22990F00A96225 /* bild-02@2x.jpg in Resources */,
+				B4BC1DB91A291246008F0A7F /* first Place3@2x.jpg in Resources */,
 				B4C3A0E51A22990F00A96225 /* bild-03@2x.jpg in Resources */,
 				B4C3A0E81A22990F00A96225 /* bild-06@2x.jpg in Resources */,
 				B4E3E68E1A1B3E9900E84243 /* image.png in Resources */,

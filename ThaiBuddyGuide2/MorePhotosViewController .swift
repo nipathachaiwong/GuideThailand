@@ -12,7 +12,8 @@ class MorePhotosViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
-    //var namePassedfromDetailView: String = ""
+    var nameStringForImages: String = ""
+   
     
     var images = [UIImage]()
     
@@ -24,8 +25,12 @@ class MorePhotosViewController: UIViewController, UIScrollViewDelegate {
         scrollView.delegate = self
         
         for i in 1...6 {
-            images.append (UIImage(named: "bild-0\(i)@2x.jpg"))
-        }
+            //images.append (UIImage(named: "bild-0\(i)@2x.jpg"))
+            images.append (UIImage(named: "\(nameStringForImages)\(i)@2x.jpg"))
+            
+            println("\(nameStringForImages)\(i)@2x.jpg")
+        
+    }
         var i: CGFloat = 0
         for image in images {
             let imageView = UIImageView(frame: CGRectZero)

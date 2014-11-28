@@ -16,8 +16,7 @@ import AVFoundation
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     var audioPlayer: AVAudioPlayer?
-   //test
-    var testString: String?
+
 //variable to get data
      var itemNamefromDetail: String = ""
     var lat = Double()
