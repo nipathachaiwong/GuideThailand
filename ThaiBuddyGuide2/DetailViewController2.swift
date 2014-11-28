@@ -59,6 +59,8 @@ class DetailViewController2: UIViewController {
         println(latCord)
         println(longCord)
         println("got here"+itemString!)
+        println(urlGetThereVidString)
+        println("in detailvc"+urlAtLocationVidString!)
         
     }
 
@@ -96,12 +98,13 @@ class DetailViewController2: UIViewController {
             
         }
        //add new seque to webvideos VC
-        if (segue.identifier == " SeeVideoSeque"){
+        if (segue.identifier == "SeeVideoSeque"){
             var WebVidepViewVCObject: WebVideoViewController = segue.destinationViewController as WebVideoViewController
             
-          // WebVidepViewVCObject.namePassedfromDetailView = itemString!
+           WebVidepViewVCObject.URLPathGoThere = urlGetThereVidString!
+            WebVidepViewVCObject.URLPathWhileThere = urlAtLocationVidString!
             
-           
+            
             
             
         }

@@ -248,6 +248,17 @@
 			name = "test data";
 			sourceTree = "<group>";
 		};
+		B4BC1DC01A2917B6008F0A7F /* DetailVC2 data group */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
+				B4BC1DA41A28CABD008F0A7F /* Item2Data.json */,
+				B4BC1DA21A28C9C0008F0A7F /* ItemModel.swift */,
+				B4BC1DA01A28C8F3008F0A7F /* Item2.swift */,
+			);
+			name = "DetailVC2 data group";
+			sourceTree = "<group>";
+		};
 		B4C3A0DC1A2298CC00A96225 /* moreVCimages */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,12 +306,9 @@
 		B4E3E6941A1B4F4700E84243 /* tableview Restaurants */ = {
 			isa = PBXGroup;
 			children = (
-				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
 				B4BC1DA81A28EEA9008F0A7F /* ItemsViewController2.swift */,
 				B4BC1DA61A28ED47008F0A7F /* DetailViewController2.swift */,
-				B4BC1DA01A28C8F3008F0A7F /* Item2.swift */,
-				B4BC1DA21A28C9C0008F0A7F /* ItemModel.swift */,
-				B4BC1DA41A28CABD008F0A7F /* Item2Data.json */,
+				B4BC1DC01A2917B6008F0A7F /* DetailVC2 data group */,
 			);
 			name = "tableview Restaurants";
 			sourceTree = "<group>";

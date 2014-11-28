@@ -11,9 +11,14 @@ import UIKit
 class WebVideoViewController: UIViewController {
     
     //embed setting custom size 250 x 188
-   var URLPathGoThere = "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0"
+ //  var URLPathGoThere = "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0"
     
-   var URLPathWhileThere = "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0"
+  // var URLPathWhileThere = "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0"
+    
+    var URLPathGoThere : String = ""
+    
+    var URLPathWhileThere : String = ""
+
     
 
     
@@ -28,7 +33,8 @@ class WebVideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+        println("inwebview"+URLPathGoThere)
+        println(URLPathWhileThere)
       
 
         loadAddressURL()

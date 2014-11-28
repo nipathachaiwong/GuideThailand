@@ -8,8 +8,8 @@
         "category": "fun",
         "lat":13.7334218,
         "long":100.6922059,
-        "urlGetThereVid": "_design/admin",
-        "urlAtLocationVid": "_design/admin",
+        "urlGetThereVid": "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0",
+        "urlAtLocationVid": "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
         "moreImages":["True.jpeg", "False"],
         "descriptionstring": " 2dsad asd dasad asd das daad asd das daad asd das daad asd das daad asd das da das sa d sad a590a68c"
     },
@@ -22,8 +22,8 @@
         "category": "for kids",
         "lat":13.7334218,
         "long":100.6922059,
-        "urlGetThereVid": "_design/admin",
-        "urlAtLocationVid": "_design/admin",
+        "urlGetThereVid": "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0",
+        "urlAtLocationVid": "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0",
         "moreImages":["True.jpeg", "False"],
         "descriptionstring": " 2dsad ad asd das daad asd das daad asd das daad asd das daad asd das daasd das das sa d sad a590a68c"
     }
