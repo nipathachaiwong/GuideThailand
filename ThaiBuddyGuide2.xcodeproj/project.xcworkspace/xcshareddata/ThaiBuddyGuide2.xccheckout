@@ -12,22 +12,34 @@
 	<dict>
 		<key>06DF66546A45A6DB61B59B371746E7C0F14F5B31</key>
 		<string>https://github.com/nipathachaiwong/thaibuddyguide2.git</string>
+		<key>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</key>
+		<string>https://github.com/nipathachaiwong/GuideThailand.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ThaiBuddyGuide2/ThaiBuddyGuide2.xcodeproj</string>
+	<string>ThaiBuddyGuide2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>06DF66546A45A6DB61B59B371746E7C0F14F5B31</key>
-		<string>../../..</string>
+		<string>../../../thaibuddyguide2</string>
+		<key>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/nipathachaiwong/thaibuddyguide2.git</string>
+	<string>https://github.com/nipathachaiwong/GuideThailand.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>06DF66546A45A6DB61B59B371746E7C0F14F5B31</string>
+	<string>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>55EBC66BBEBEFE9348E9347607FFE2EF5C2DB616</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GuideThailand</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

@@ -68,7 +68,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         mappy.addAnnotation(annotation)
         
         // Audio of directions
-            var SoundUrl:NSURL? = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("testfordirectionaduio", ofType: "mp3")!)
+            var SoundUrl:NSURL? = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource((itemNamefromDetail), ofType: "mp3")!)
             if (SoundUrl != nil) {
                 self.audioPlayer = AVAudioPlayer(contentsOfURL: SoundUrl!, error: nil)
             }
