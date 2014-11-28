@@ -32,8 +32,8 @@ class DetailViewController2: UIViewController {
     var urlGetThereVidString: String?
     var urlAtLocationVidString: String?
     
-    var latCord: Float?
-    var longCord: Float?
+    var latCord: Double?
+    var longCord: Double?
     
     @IBOutlet weak var desciptionLabel: UILabel!
     
@@ -54,6 +54,11 @@ class DetailViewController2: UIViewController {
          scrollView.contentSize = CGSize(width: CGRectGetWidth(view.bounds), height: CGRectGetHeight(view.bounds) * 1.5)
         scrollView.bounces = false
         
+        println(itemString)
+        println(phoneString)
+        println(latCord)
+        println(longCord)
+        println("got here"+itemString!)
         
     }
 
@@ -64,7 +69,7 @@ class DetailViewController2: UIViewController {
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
     {
-         println("got here"+itemString!)
+        
         self.dismissViewControllerAnimated(true,completion: nil)
     }
 
@@ -77,9 +82,11 @@ class DetailViewController2: UIViewController {
         // nextVC.itemNamefromDetail = itemString!
         
         if (segue.identifier == "goToSque"){
-            var nextVC: MapViewController = segue.destinationViewController as MapViewController
+            var mapVC: MapViewController = segue.destinationViewController as MapViewController
             
-            nextVC.itemNamefromDetail = itemString!
+            mapVC.itemNamefromDetail = itemString!
+            mapVC.lat = latCord!
+            mapVC.lon = longCord!
         }
         
         if (segue.identifier == "MorePhotoSeque"){

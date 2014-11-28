@@ -20,6 +20,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     var testString: String?
 //variable to get data
      var itemNamefromDetail: String = ""
+    var lat = Double()
+    var lon = Double()
    
     
     
@@ -42,8 +44,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         
         // 1. pick a point
-     var lat = 13.7334218
-     var lon = 100.6922059
+    // var lat = 13.7334218
+    // var lon = 100.6922059
         
        
             

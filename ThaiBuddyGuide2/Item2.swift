@@ -20,8 +20,8 @@ class Item2: NSObject {
     //code: var lat = (Wage.text as NSString).floatValue
     
     //use in gotovC
-    var lat:Float = 0
-    var long:Float = 0
+     var lat:Double = 0.007
+    var long:Double  = 0.007
     
     //urls for videoVC
     var urlGetThereVid:String = ""

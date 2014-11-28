@@ -42,8 +42,8 @@ class ItemModel: NSObject {
             q.imageName = jsonDictionary["imageName"] as String
             q.descriptiontext = jsonDictionary["descriptionstring"] as String
            
-            q.lat = jsonDictionary["lat"] as Float
-            q.long = jsonDictionary["long"] as Float
+            q.lat = jsonDictionary["lat"] as Double
+            q.long = jsonDictionary["long"] as Double
             
              q.urlGetThereVid = jsonDictionary["urlGetThereVid"] as String
              q.urlAtLocationVid = jsonDictionary["urlAtLocationVid"] as String
