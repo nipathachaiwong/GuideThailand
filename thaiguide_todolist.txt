@@ -19,7 +19,7 @@ println("number is \(numberFloatValue)")
 ____
 show in savelist: bool
 
-moreImagesName as array?
+moreImagesName as a cat cat variable from itemname selected and number
 
 url to youtube videos as string-
 note: urls can be call from two separate json 1. local url    2. remote url. use two tableviews in the same view?
@@ -39,3 +39,6 @@ note: using same code as in the to do list -make and delete ( see youtube video)
 -------
 11/27
 work on json file and import to main project from jsontest project
+
+11/28/
+morephotovc nav bar and nav button

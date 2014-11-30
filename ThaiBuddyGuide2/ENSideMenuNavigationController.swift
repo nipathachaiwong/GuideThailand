@@ -9,9 +9,9 @@
 import UIKit
 
 class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol {
-    
-    internal var sideMenu : ENSideMenu?
-    internal var sideMenuAnimationType : ENSideMenuAnimation = .Default
+    //internal
+     var sideMenu : ENSideMenu?
+     var sideMenuAnimationType : ENSideMenuAnimation = .Default
     
     
     // MARK: - Life cycle
@@ -47,7 +47,7 @@ class ENSideMenuNavigationController: UINavigationController, ENSideMenuProtocol
             self.viewControllers = [contentViewController]
             break
         default:
-            contentViewController.navigationItem.hidesBackButton = true
+            contentViewController.navigationItem.hidesBackButton = false
             self.setViewControllers([contentViewController], animated: true)
             break
         }

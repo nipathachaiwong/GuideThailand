@@ -21,7 +21,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
      var itemNamefromDetail: String = ""
     var lat = Double()
     var lon = Double()
-   
+    
+
     
     
     
@@ -59,7 +60,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         var annotation = MKPointAnnotation()
         annotation.coordinate = loc
-        annotation.title = "Memorial Stadium"
+        annotation.title = "Go Huskers!"
         annotation.subtitle = "Go Huskers!"
         
         // 5. update zoom and add marker

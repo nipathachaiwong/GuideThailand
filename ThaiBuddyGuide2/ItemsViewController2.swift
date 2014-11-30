@@ -74,6 +74,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         
         var detailedViewController: DetailViewController2 = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController2") as DetailViewController2
         
+            
         detailedViewController.itemString = item.name
         detailedViewController.myDetailedImageName = item.imageName
         detailedViewController.desciptionDetail = item.descriptiontext
@@ -92,6 +93,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
     // TO DO
     //   1. Arrayofitemslike saved to nsuserdefaults-
     
+ 
     
 }
 

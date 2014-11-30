@@ -13,6 +13,7 @@ class MyMenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+                //
         // Customize apperance of table view
         tableView.contentInset = UIEdgeInsetsMake(64.0, 0, 0, 0) //
         tableView.separatorStyle = .None
@@ -23,6 +24,8 @@ class MyMenuTableViewController: UITableViewController {
         self.clearsSelectionOnViewWillAppear = false
         
         tableView.selectRowAtIndexPath(NSIndexPath(forRow: selectedMenuItem, inSection: 0), animated: false, scrollPosition: .Middle)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,6 +80,15 @@ class MyMenuTableViewController: UITableViewController {
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         var destViewController : UIViewController
+        
+     
+        
+      
+        
+        
+        
+        
+    
         switch (indexPath.row) {
         case 0:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController1") as UIViewController
@@ -87,22 +99,61 @@ class MyMenuTableViewController: UITableViewController {
         case 2:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController3") as UIViewController
             break
+       
         default:
             destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController4") as UIViewController
             break
         }
+        
+      
+        
         sideMenuController()?.setContentViewController(destViewController)
     }
     
-    
-    /*
-    // MARK: - Navigation
+     //MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    //test code begin
+    
+   // var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    
+    //It is instance of  `NewViewController` from storyboard
+    
+    //let vc : DetailViewController2 = storyboard.instantiateViewControllerWithIdentifier("DetailViewController2") as DetailViewController2
+    
+/*
+    //this might work need to work on init
+    func test() {
+        println("sideMenuWillClose")
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+        let destViewController : UIViewController
+        
+      
+        
+        if (1 == 1 ){
+            destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ViewController5") as UIViewController        }
+        
+        sideMenuController()?.setContentViewController(destViewController)
+        
     }
-    */
+    
+*/
+    
+    
+    // Pass delegate and variable to vc which is DetailViewController2
+    
+    // vc.createAccountDelegate = self
+    
+    // vc.teststring = "hello"
+    
+    
+    //vc.transitioningDelegate = self
+    
+    //vc.modalTransitionStyle = UIModalTransitionStyle.CoverVertical
+    
+    //sideMenuController()?.setContentViewController(vc)
+
+    
+    
     
 }

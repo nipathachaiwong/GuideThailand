@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GId-Bi-dYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-973" y="1688"/>
+            <point key="canvasLocation" x="-441" y="1688"/>
         </scene>
         <!--My Navigation Controller-->
         <scene sceneID="mHd-Mu-0gP">
@@ -104,14 +104,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="PV9-tc-XUh" kind="relationship" relationship="rootViewController" id="GpY-Kh-RHe"/>
+                        <segue destination="PV9-tc-XUh" kind="relationship" relationship="rootViewController" id="sz5-YI-vP5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6X-8Z-pAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1491" y="233"/>
         </scene>
-        <!--SwiftSideMenu-->
+        <!--Home Page-->
         <scene sceneID="gNL-lF-5D6">
             <objects>
                 <viewController storyboardIdentifier="ViewController1" id="PV9-tc-XUh" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,7 +129,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SwiftSideMenu" id="gw2-ox-Dcp">
+                    <navigationItem key="navigationItem" title="Home Page" id="gw2-ox-Dcp">
                         <barButtonItem key="leftBarButtonItem" title="Toggle" id="nwa-wz-cul">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="PV9-tc-XUh" id="0UH-d9-VLI"/>
@@ -154,7 +154,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="j7q-In-qGO">
-                                <rect key="frame" x="0.0" y="63" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="115" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" id="pBm-RW-meY" customClass="CustomCell2" customModule="ThaiBuddyGuide2" customModuleProvider="target">
@@ -244,7 +244,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vck-ef-RPp" kind="modal" identifier="SeeVideoSeque" id="lab-xi-wUB"/>
+                                    <segue destination="Vck-ef-RPp" kind="modal" identifier="SeeVideoSeque" id="Tf4-9a-EPf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwM-bf-snJ">
@@ -292,9 +292,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Aq-Hj-vsl">
+                                <rect key="frame" x="111" y="530" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EEm-qS-I7W" kind="modal" identifier="testseq" id="fsZ-56-tqj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mw6-Ef-Mwq"/>
                     <connections>
                         <outlet property="desciptionLabel" destination="J2D-P6-2gQ" id="Mav-Oy-t7i"/>
                         <outlet property="itemLabel" destination="D0u-FN-u5b" id="gcu-j9-61C"/>
@@ -302,11 +312,12 @@
                         <outlet property="nameInThaiLabel" destination="xzY-77-U6C" id="eZG-Ce-Qlp"/>
                         <outlet property="phoneLabel" destination="cBw-fY-TJG" id="phr-C2-VB6"/>
                         <outlet property="scrollView" destination="OMa-kq-09b" id="t9Y-OY-5qa"/>
+                        <outlet property="view" destination="gL6-5v-vwH" id="zuQ-zE-I1V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuH-6e-SqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1481" y="1708"/>
+            <point key="canvasLocation" x="-949" y="1708"/>
         </scene>
         <!--GoThereVC-->
         <scene sceneID="hzI-DW-TO6">
@@ -336,7 +347,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rET-Yo-hrN">
-                                <rect key="frame" x="30" y="115" width="260" height="387"/>
+                                <rect key="frame" x="6" y="115" width="314" height="453"/>
                                 <connections>
                                     <outlet property="delegate" destination="8rm-jc-e06" id="gtL-KX-uu0"/>
                                 </connections>
@@ -402,7 +413,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksV-Tj-w1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-289" y="1797"/>
+            <point key="canvasLocation" x="243" y="1797"/>
         </scene>
         <!--More Photos-->
         <scene sceneID="CFd-co-poW">
@@ -416,9 +427,15 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMn-Jw-b7F">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMn-Jw-b7F">
+                                <rect key="frame" x="0.0" y="28" width="320" height="548"/>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" backIndicatorImage="bild-03.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RYW-wF-JsE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Back" id="scX-7U-jNc"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -434,7 +451,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKd-R8-cSE" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1848" y="2425"/>
+            <point key="canvasLocation" x="-1848" y="2435"/>
         </scene>
         <!--Web Video View Controller-->
         <scene sceneID="crL-kz-sqY">
@@ -477,7 +494,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M33-EB-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1442" y="2425"/>
+            <point key="canvasLocation" x="-1193" y="2606"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="COo-LM-1F8">
@@ -487,8 +504,49 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             </objects>
             <point key="canvasLocation" x="-800" y="2813"/>
         </scene>
+        <!--ViewController5-->
+        <scene sceneID="TOl-YB-kVn">
+            <objects>
+                <viewController storyboardIdentifier="ViewController5" title="ViewController5" id="EEm-qS-I7W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wlr-Jr-eIs"/>
+                        <viewControllerLayoutGuide type="bottom" id="0II-XZ-KeY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="60l-iF-PTd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y27-ve-pZ8">
+                                <rect key="frame" x="97" y="274" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9G-lU-LgK">
+                                <rect key="frame" x="139" y="313" width="43" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2267350789" green="0.82260784629999995" blue="0.83163265310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="y27-ve-pZ8" secondAttribute="centerY" id="991-Xv-I0p"/>
+                            <constraint firstAttribute="centerX" secondItem="q9G-lU-LgK" secondAttribute="centerX" id="alz-Tw-4RU"/>
+                            <constraint firstItem="q9G-lU-LgK" firstAttribute="top" secondItem="y27-ve-pZ8" secondAttribute="bottom" constant="18" id="cfe-DT-nxp"/>
+                            <constraint firstAttribute="centerX" secondItem="y27-ve-pZ8" secondAttribute="centerX" id="tV6-A0-1lj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-Ye-xXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="2375"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="bild-03.jpg" width="375" height="667"/>
         <image name="image.png" width="1174" height="1220"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

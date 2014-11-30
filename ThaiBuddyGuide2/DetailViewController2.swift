@@ -8,7 +8,11 @@
 
 import UIKit
 
+
+
 class DetailViewController2: UIViewController {
+
+    var sideMenu : ENSideMenu?
 
     @IBOutlet weak var myDetailedImageView: UIImageView!
    
@@ -21,6 +25,13 @@ class DetailViewController2: UIViewController {
     
     //scrollview
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    // side menu var
+    
+   // internal var sideMenu : ENSideMenu?
+   // internal var sideMenuAnimationType : ENSideMenuAnimation = .Default
+    
     
     var itemString: String?
     var myDetailedImageName: String?
@@ -39,8 +50,17 @@ class DetailViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        //side menu  ewewqewewwq
+        sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MyMenuTableViewController(), menuPosition:.Left)
         
-    self.itemLabel.text = itemString
+        // make navigation bar showing over side menu
+      // view.bringSubviewToFront(navigationBar)
+        
+        //78475443
+        
+        
+        self.itemLabel.text = itemString
        self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
         self.desciptionLabel.text = desciptionDetail
         
@@ -69,10 +89,12 @@ class DetailViewController2: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+   
+    //makes the view disappear and go back
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
     {
         
-        self.dismissViewControllerAnimated(true,completion: nil)
+      //  self.dismissViewControllerAnimated(true,completion: nil)
     }
 
     @IBAction func goTherebutton(sender: AnyObject) {
@@ -103,6 +125,15 @@ class DetailViewController2: UIViewController {
             
            WebVidepViewVCObject.URLPathGoThere = urlGetThereVidString!
             WebVidepViewVCObject.URLPathWhileThere = urlAtLocationVidString!
+            
+            
+            
+            
+        }
+        
+        if (segue.identifier == "testseq"){
+            var ViewController5obj: UIViewController = segue.destinationViewController as UIViewController
+           
             
             
             
