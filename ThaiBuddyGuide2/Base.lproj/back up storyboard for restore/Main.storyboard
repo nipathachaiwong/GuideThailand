@@ -277,9 +277,6 @@
                                     </label>
                                 </subviews>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-Da-qUt">
-                                <rect key="frame" x="24" y="28" width="272" height="143"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name in thai " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xzY-77-U6C">
                                 <rect key="frame" x="40" y="182" width="240" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -293,7 +290,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Aq-Hj-vsl">
-                                <rect key="frame" x="111" y="530" width="46" height="30"/>
+                                <rect key="frame" x="126" y="486" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -301,10 +298,23 @@
                                     <segue destination="EEm-qS-I7W" kind="modal" identifier="testseq" id="fsZ-56-tqj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-Da-qUt">
+                                <rect key="frame" x="24" y="44" width="272" height="143"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxs-w3-6Nn">
+                                <rect key="frame" x="24" y="14" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="gvn-wx-uX4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mw6-Ef-Mwq"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="desciptionLabel" destination="J2D-P6-2gQ" id="Mav-Oy-t7i"/>
                         <outlet property="itemLabel" destination="D0u-FN-u5b" id="gcu-j9-61C"/>
@@ -312,12 +322,11 @@
                         <outlet property="nameInThaiLabel" destination="xzY-77-U6C" id="eZG-Ce-Qlp"/>
                         <outlet property="phoneLabel" destination="cBw-fY-TJG" id="phr-C2-VB6"/>
                         <outlet property="scrollView" destination="OMa-kq-09b" id="t9Y-OY-5qa"/>
-                        <outlet property="view" destination="gL6-5v-vwH" id="zuQ-zE-I1V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuH-6e-SqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-949" y="1708"/>
+            <point key="canvasLocation" x="-971" y="1812"/>
         </scene>
         <!--GoThereVC-->
         <scene sceneID="hzI-DW-TO6">
@@ -496,18 +505,10 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             </objects>
             <point key="canvasLocation" x="-1193" y="2606"/>
         </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="COo-LM-1F8">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="E7d-a5-ytc" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pP0-yJ-uNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-800" y="2813"/>
-        </scene>
         <!--ViewController5-->
         <scene sceneID="TOl-YB-kVn">
             <objects>
-                <viewController storyboardIdentifier="ViewController5" title="ViewController5" id="EEm-qS-I7W" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController5" title="ViewController5" id="EEm-qS-I7W" customClass="ViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wlr-Jr-eIs"/>
                         <viewControllerLayoutGuide type="bottom" id="0II-XZ-KeY"/>
@@ -542,7 +543,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-Ye-xXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="2375"/>
+            <point key="canvasLocation" x="-539" y="2664"/>
         </scene>
     </scenes>
     <resources>

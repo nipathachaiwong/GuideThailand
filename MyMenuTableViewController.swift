@@ -59,7 +59,7 @@ class MyMenuTableViewController: UITableViewController {
         }
         
         
-        cell!.textLabel?.text = "ViewController #\(indexPath.row+1)"
+        cell!.textLabel?.text = "View #\(indexPath.row+1)"
         
         return cell!
     }
@@ -80,13 +80,6 @@ class MyMenuTableViewController: UITableViewController {
         //Present new view controller
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
         var destViewController : UIViewController
-        
-     
-        
-      
-        
-        
-        
         
     
         switch (indexPath.row) {

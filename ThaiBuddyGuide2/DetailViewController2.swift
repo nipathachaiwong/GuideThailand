@@ -10,10 +10,12 @@ import UIKit
 
 
 
-class DetailViewController2: UIViewController {
+class DetailViewController2: UIViewController{
 
-    var sideMenu : ENSideMenu?
+    
 
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    
     @IBOutlet weak var myDetailedImageView: UIImageView!
    
     
@@ -26,12 +28,18 @@ class DetailViewController2: UIViewController {
     //scrollview
     @IBOutlet weak var scrollView: UIScrollView!
     
+
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true,completion: nil)
+
+    }
     
     // side menu var
     
    // internal var sideMenu : ENSideMenu?
-   // internal var sideMenuAnimationType : ENSideMenuAnimation = .Default
-    
+   internal var sideMenuAnimationType : ENSideMenuAnimation = .Default
+    var sideMenu : ENSideMenu?
+    var menuTableViewController : MyMenuTableViewController?
     
     var itemString: String?
     var myDetailedImageName: String?
@@ -55,7 +63,7 @@ class DetailViewController2: UIViewController {
         sideMenu = ENSideMenu(sourceView: self.view, menuTableViewController: MyMenuTableViewController(), menuPosition:.Left)
         
         // make navigation bar showing over side menu
-      // view.bringSubviewToFront(navigationBar)
+     //  view.bringSubviewToFront(navigationBar)
         
         //78475443
         
@@ -133,6 +141,10 @@ class DetailViewController2: UIViewController {
         
         if (segue.identifier == "testseq"){
             var ViewController5obj: UIViewController = segue.destinationViewController as UIViewController
+            
+            
+            
+                
            
             
             
