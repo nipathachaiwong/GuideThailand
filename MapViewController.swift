@@ -22,7 +22,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     var lat = Double()
     var lon = Double()
     
-
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true,completion: nil)
+        
+    }
     
     
     

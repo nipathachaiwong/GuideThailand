@@ -21,10 +21,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goToViewControler1(sender: AnyObject) {
+    }
     
-    @IBAction func toggleSideMenu(sender: AnyObject) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //var nextVC: MapViewController = segue.destinationViewController as MapViewController
+        
+        // nextVC.itemNamefromDetail = itemString!
+        
+        if (segue.identifier == "itemTableVC2Seque"){
+            var itemTableVC2: ItemsViewController2 = segue.destinationViewController as ItemsViewController2
+            
+        }
+        
+    
+  //  @IBAction func toggleSideMenu(sender: AnyObject) {
         toggleSideMenuView()
     }
     
 }
-

@@ -20,7 +20,10 @@ class WebVideoViewController: UIViewController {
     var URLPathWhileThere : String = ""
 
     
-
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true,completion: nil)
+        
+    }
     
    
     

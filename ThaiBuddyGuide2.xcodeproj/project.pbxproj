@@ -164,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D2CDFD1A2009F000B02E7E /* Main.storyboard */,
+				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B4D2CDEE1A1FFDC100B02E7E /* tablev */,
 				B4E3E6941A1B4F4700E84243 /* tableview Restaurants */,
 				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
@@ -217,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */,
-				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 			);
 			name = "Main VC";
 			path = ThaiBuddyGuide2;

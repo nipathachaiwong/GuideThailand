@@ -42,3 +42,6 @@ work on json file and import to main project from jsontest project
 
 11/28/
 morephotovc nav bar and nav button
+
+12/1
+back button for each view and sub view
