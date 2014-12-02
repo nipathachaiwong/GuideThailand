@@ -10,13 +10,19 @@ import UIKit
 
 class ItemModel: NSObject {
    
+    //get json url
+    let GetJsonUrlInstance:GetJsonUrl = GetJsonUrl()
+    
     func getItems() -> [Item2] {
         
         // Array of question objects
         var items:[Item2] = [Item2]()
         
+        
+        
         // Get Json array of dictionaries
         //remote code below currenrlt commented out
+        
        // let jsonObjects:[NSDictionary] = self.getRemoteJsonFile()
         
         //locale
@@ -74,8 +80,10 @@ class ItemModel: NSObject {
     func getRemoteJsonFile() -> [NSDictionary] {
         
         // Create a new URL
-        let remoteUrl:NSURL? = NSURL(string: "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json")
+       // let remoteUrl:NSURL? = NSURL(string: "https://dl.dropboxusercontent.com/u/196547970/QuestionDat.json")
         
+        let remoteUrl:NSURL? = NSURL(string: GetJsonUrlInstance.JsonUrl)
+              
         // Check if it's nil
         if let actualRemoteUrl = remoteUrl {
             
@@ -102,7 +110,9 @@ class ItemModel: NSObject {
     func getLocalJsonFile() -> [NSDictionary] {
         
         // Get an NSURL obj pointing to the json file in our app bundle
-        let appBundlePath:String? = NSBundle.mainBundle().pathForResource("Item2Data", ofType: "json")
+       
+        // let appBundlePath:String? = NSBundle.mainBundle().pathForResource("Item2Data", ofType: "json")
+        let appBundlePath:String? = NSBundle.mainBundle().pathForResource(GetJsonUrlInstance.JsonFileName, ofType: "json")
         
         // Use optional binding to check if path exists
         if let actualBundlePath = appBundlePath {

@@ -36,6 +36,9 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         
     }
     
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true,completion: nil)
+    }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int

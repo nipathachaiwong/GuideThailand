@@ -221,6 +221,15 @@
                                     <outlet property="delegate" destination="vh3-aM-RWl" id="uLr-6t-8Wi"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cga-8t-cjs">
+                                <rect key="frame" x="164" y="28" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="vh3-aM-RWl" eventType="touchUpInside" id="u90-1x-l1L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -232,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Uh-6D-MLh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1469.5" y="973.5"/>
+            <point key="canvasLocation" x="-1545.5" y="971.5"/>
         </scene>
         <!--Detail View Controller2-->
         <scene sceneID="AYi-jY-xNo">

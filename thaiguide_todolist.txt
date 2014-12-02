@@ -21,6 +21,8 @@ show in savelist: bool
 
 moreImagesName as a cat cat variable from itemname selected and number
 
+NOTE: morephotoVC imagename is set up the itemName in the json file. Need to have images of the same name
+
 url to youtube videos as string-
 note: urls can be call from two separate json 1. local url    2. remote url. use two tableviews in the same view?
 
@@ -44,4 +46,9 @@ work on json file and import to main project from jsontest project
 morephotovc nav bar and nav button
 
 12/1
-back button for each view and sub view
+back button for each views and sub views
+home page buttons for main vc template
+
+12/2 savebutton array-- use nsuserdefaults
+
+

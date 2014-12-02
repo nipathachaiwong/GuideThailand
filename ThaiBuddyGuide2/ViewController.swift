@@ -35,8 +35,9 @@ class ViewController: UIViewController {
         }
         
     
-  //  @IBAction func toggleSideMenu(sender: AnyObject) {
-        toggleSideMenuView()
-    }
+//   @IBAction func toggleSideMenu(sender: AnyObject) {
+   //     toggleSideMenuView()
+   // }
     
+}
 }
